@@ -37,7 +37,7 @@ syn match sawParentheses "("
 syn match sawParentheses ")"
 
 syn match   sawNumber "\(0\(x\|X\|b\|B\|o\|O\)\x\+\)\|-\?\(\d\|_\)\+"
-syn match ddlIdent "\(\l\|\u\)\(\a\|\d\|_\|'\)*"
+syn match   sawIndent "\(\l\|\u\)\(\a\|\d\|_\|'\)*"
 
 " inline cryptol highlight
 if filereadable("syntax/cryptol.vim")
