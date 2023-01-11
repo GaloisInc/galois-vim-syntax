@@ -147,7 +147,7 @@ syn match   cryNumber "\(0\(x\|X\|b\|B\|o\|O\)\x\+\)\|-\?\(\d\|_\)\+"
 
 " This is here so that we don't highlight numbers in X23 for example
 " or x'
-syn match ddlIdent "\(\l\|\u\)\(\a\|\d\|_\|'\)*"
+syn match cryIndent "\(\l\|\u\)\(\a\|\d\|_\|'\)*"
 
 
 hi def link cryKeywordImport  Include
