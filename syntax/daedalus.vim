@@ -28,7 +28,7 @@ syn keyword ddlKeywordFun   Optional Optional?
 syn keyword ddlKeywordFun   Many Many?
 syn keyword ddlKeywordFun   Fail Accept
 syn keyword ddlKeywordFun   UInt8 $any Match END
-syn keyword ddlKeywordFun   Offset SetStream GetStream Take Drop
+syn keyword ddlKeywordFun   Offset SetStream GetStream take Take Drop
 
 syn keyword ddlKeywordConst true false
 syn keyword ddlKeywordConst nothing just
@@ -111,7 +111,7 @@ syn region  ddlString start="\"" skip="\\\"" end="\"" contains=ddlEsc
 syn region  ddlByte   start="'"  skip="\\'"  end="'"  contains=ddlEsc
 
 
-syn match   ddlNumber "\(0\(x\|X\|b\|B\|o\|O\)\(\x\|_\)\+\)\|-\?\d\(\d\|_\)*"
+syn match   ddlNumber "\(0\(x\|X\|b\|B\|o\|O\)\x\+\)\|-\?\d\+"
 
 hi def link ddlKeywordImport  Include
 hi def link ddlKeyword        Structure
